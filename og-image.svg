@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#0b0f14"/>
+      <stop offset="100%" stop-color="#0d1218"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4cc3f1"/>
+      <stop offset="100%" stop-color="#7ee787"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Badge -->
+  <g transform="translate(80,90)">
+    <rect x="0" y="0" width="56" height="56" rx="14" fill="url(#accent)"/>
+    <path d="M18 36c0-12 8-18 18-18h16v10H36c-4 0-6 4-6 8s2 8 6 8h16v10H36c-10 0-18-6-18-18z" fill="#072231"/>
+  </g>
+
+  <!-- Title -->
+  <text x="80" y="190" fill="#e6edf3" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="700">GoCadence</text>
+  <!-- Subtitle -->
+  <text x="80" y="250" fill="#9fb0c0" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="36">A simple, fast project site.</text>
+
+  <!-- Decorative card -->
+  <g transform="translate(80,300)">
+    <rect width="1040" height="210" rx="18" fill="#11161d" stroke="#1f2a36"/>
+    <text x="32" y="72" fill="#e6edf3" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="600">Build something awesome.</text>
+    <text x="32" y="118" fill="#9fb0c0" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="22">Minimal, responsive, and ready to customize in minutes.</text>
+    <rect x="32" y="142" width="170" height="48" rx="12" fill="url(#accent)"/>
+    <text x="52" y="174" fill="#072231" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Get Started</text>
+  </g>
+</svg>
+
