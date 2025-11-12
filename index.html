@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GoCadence</title>
-    <meta name="description" content="GoCadence — a simple, fast project site." />
+    <title>GoCadence — Portfolio</title>
+    <meta name="description" content="Personal portfolio — projects, experience, and contact details." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="theme-color" content="#0b0f14" />
     <link rel="canonical" href="https://gocadence.tech/" />
-    <meta property="og:title" content="GoCadence" />
-    <meta property="og:description" content="A simple, fast project site." />
+    <meta property="og:title" content="GoCadence — Portfolio" />
+    <meta property="og:description" content="Projects, experience, and contact details." />
     <meta property="og:url" content="https://gocadence.tech/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://gocadence.tech/og-image.svg" />
@@ -105,10 +105,11 @@
         </a>
         <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
         <nav id="menu" class="nav-links">
-          <a href="#features">Features</a>
           <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
-          <a class="nav-cta" href="#get-started">Get Started</a>
+          <a class="nav-cta" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
         </nav>
       </div>
     </header>
@@ -117,60 +118,110 @@
       <section class="hero">
         <div class="container inner">
           <div>
-            <h1>Build something awesome.</h1>
-            <p>A minimal, responsive starter you can customize in minutes.</p>
+            <h1>Hi, I’m <span style="color:var(--accent)">[Your Name]</span>.</h1>
+            <p>I build things for the web — with a focus on clean UX, fast performance, and practical impact. Below are selected projects and experience.</p>
             <div class="actions">
-              <a class="btn primary" href="#get-started">Get Started</a>
-              <a class="btn" href="#about">Learn More</a>
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="mailto:gotskostudy@gmail.com">Contact Me</a>
             </div>
           </div>
           <div class="panel" aria-label="Preview">
-            <pre style="margin:0; white-space:pre-wrap"><code>&lt;!-- Drop your content here --&gt;
-&lt;section id="features"&gt;...&lt;/section&gt;</code></pre>
-          </div>
-        </div>
-      </section>
-
-      <section id="features" class="container">
-        <h2>Features</h2>
-        <div class="card-grid" role="list">
-          <div class="card" role="listitem">
-            <h3>Fast</h3>
-            <p>No frameworks, just clean HTML/CSS/JS.</p>
-          </div>
-          <div class="card" role="listitem">
-            <h3>Responsive</h3>
-            <p>Looks good on phones, tablets, and desktops.</p>
-          </div>
-          <div class="card" role="listitem">
-            <h3>Accessible</h3>
-            <p>Semantic structure and keyboard-friendly navigation.</p>
+            <pre style="margin:0; white-space:pre-wrap"><code>// Quick edit guide
+// 1) Update your name and intro above
+// 2) Fill projects in the Projects section
+// 3) Add roles in Experience
+// 4) Keep contact links current</code></pre>
           </div>
         </div>
       </section>
 
       <section id="about" class="container">
         <h2>About</h2>
-        <p>This starter is a simple base for landing pages, project sites, or hackathon demos. Swap text, add sections, and ship.</p>
-        <ul class="list">
-          <li>Edit the name in the header.</li>
-          <li>Replace the hero copy to match your project.</li>
-          <li>Add links to your repo or demo.</li>
-        </ul>
+        <p>Short bio about you. Example: I’m a developer/designer who enjoys building useful tools and shipping polished experiences. I work with HTML/CSS/JS and modern frameworks when they make sense.</p>
+        <div class="list" style="grid-template-columns: repeat(2, minmax(0,1fr));">
+          <div class="list-item" style="background:transparent; border:none; padding:0">
+            <h3 style="margin:0 0 8px; font-size:16px">Skills</h3>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">GitHub Pages</span>
+            </div>
+          </div>
+          <div class="list-item" style="background:transparent; border:none; padding:0">
+            <h3 style="margin:0 0 8px; font-size:16px">Links</h3>
+            <p style="margin:0">
+              <a href="https://github.com/elgniston" target="_blank" rel="noopener">GitHub</a> ·
+              <a href="#" target="_blank" rel="noopener">LinkedIn</a> ·
+              <a href="mailto:gotskostudy@gmail.com">Email</a>
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section id="get-started" class="container">
-        <h2>Get Started</h2>
-        <p>Open this file and customize the content. Keep everything in one file, or split CSS/JS later as needed.</p>
-        <div class="actions">
-          <a class="btn" href="https://example.com" target="_blank" rel="noopener">Add your link</a>
+      <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="card-grid" role="list">
+          <div class="card" role="listitem">
+            <h3>Project One</h3>
+            <p>A short description of what this project does and why it’s interesting.</p>
+            <div class="tags"><span class="tag">JS</span><span class="tag">CSS</span></div>
+            <div class="actions" style="margin-top:10px">
+              <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Project Two</h3>
+            <p>Another quick summary of a project. Focus on outcomes and your role.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">UI</span></div>
+            <div class="actions" style="margin-top:10px">
+              <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Project Three</h3>
+            <p>Brief note on challenges you solved or metrics you improved.</p>
+            <div class="tags"><span class="tag">Performance</span><span class="tag">Accessibility</span></div>
+            <div class="actions" style="margin-top:10px">
+              <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="t-item">
+            <header>
+              <strong>[Role Title]</strong> · <span class="muted">[Company]</span>
+            </header>
+            <div class="muted">[Start] — [End]</div>
+            <ul>
+              <li>What you did and impact achieved.</li>
+              <li>Technologies used or responsibilities.</li>
+            </ul>
+          </article>
+          <article class="t-item">
+            <header>
+              <strong>[Role Title]</strong> · <span class="muted">[Company]</span>
+            </header>
+            <div class="muted">[Start] — [End]</div>
+            <ul>
+              <li>Another concise achievement or responsibility.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
       <section id="contact" class="container">
         <h2>Contact</h2>
-        <p>Questions or feedback? Reach out.</p>
-        <p><a href="mailto:gotskostudy@gmail.com">gotskostudy@gmail.com</a></p>
+        <p>Best way to reach me:</p>
+        <p><a class="btn" href="mailto:gotskostudy@gmail.com">Email Me</a> <a class="btn" href="https://github.com/elgniston" target="_blank" rel="noopener">GitHub</a> <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p class="muted">Prefer a resume? See the Resume button in the header.</p>
       </section>
     </main>
 
@@ -198,6 +249,19 @@
       document.getElementById('year').textContent = new Date().getFullYear();
       const siteName = document.getElementById('site-name').textContent;
       document.getElementById('footer-name').textContent = siteName;
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "[Your Name]",
+        "url": "https://gocadence.tech/",
+        "email": "mailto:gotskostudy@gmail.com",
+        "sameAs": [
+          "https://github.com/elgniston",
+          "https://www.linkedin.com/in/your-profile"
+        ]
+      }
     </script>
   </body>
   </html>
