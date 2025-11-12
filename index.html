@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vitaliy Gotsko - Portfolio</title>
+    <meta name="description" content="Portfolio of Vitaliy Gotsko - projects, experience, education, and contact." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#0b0f14" />
+    <link rel="canonical" href="https://gocadence.tech/" />
+    <meta property="og:title" content="Vitaliy Gotsko - Portfolio" />
+    <meta property="og:description" content="Projects, experience, education, and contact details." />
+    <meta property="og:url" content="https://gocadence.tech/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://gocadence.tech/og-image.svg" />
+    <meta property="og:image:alt" content="Vitaliy Gotsko - Portfolio" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://gocadence.tech/og-image.svg" />
+    <style>
+      :root { --bg:#0b0f14; --panel:#11161d; --text:#e6edf3; --muted:#9fb0c0; --accent:#4cc3f1; --accent-2:#7ee787; --border:#1f2a36; --shadow:0 2px 16px rgba(0,0,0,.3) }
+      * { box-sizing: border-box }
+      html, body { height: 100% }
+      body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height:1.6; color:var(--text); background:linear-gradient(180deg,#0b0f14 0%,#0d1218 100%) }
+      a { color: var(--accent); text-decoration: none }
+      a:hover { text-decoration: underline }
+      .container { width: min(1100px, 92%); margin-inline: auto }
+      header { position: sticky; top: 0; z-index: 100; background: rgba(11,15,20,.7); backdrop-filter: blur(10px); border-bottom:1px solid var(--border) }
+      .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
+      .brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.3px }
+      .brand .logo { width:28px; height:28px; border-radius:8px; background:linear-gradient(135deg,var(--accent),var(--accent-2)) }
+      .nav-links { display:flex; gap:18px; align-items:center }
+      .nav-links a { color:var(--text); opacity:.9 }
+      .nav-cta { padding:8px 14px; background:var(--accent); color:#072231; border-radius:8px; font-weight:600; border:1px solid transparent }
+      .nav-toggle { display:none; background:none; border:1px solid var(--border); color:var(--text); padding:8px 10px; border-radius:8px }
+      @media (max-width: 900px) { .nav-links { display:none; position:absolute; inset:56px 0 auto 0; background:rgba(11,15,20,.95); border-bottom:1px solid var(--border); padding:12px 4%; flex-direction:column; align-items:flex-start } .nav-links.open{display:flex} .nav-toggle{display:inline-flex; align-items:center; gap:8px} }
+      .hero { padding: clamp(48px, 8vw, 96px) 0 }
+      .hero .inner { display:grid; grid-template-columns: 1.2fr 1fr; gap:32px; align-items:center }
+      .hero h1 { font-size: clamp(28px, 4.5vw, 44px); line-height:1.15; margin:0 0 12px }
+      .hero p { color:var(--muted); margin:0 0 20px }
+      .hero .panel { background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:var(--shadow) }
+      .hero .actions { display:flex; gap:12px; flex-wrap:wrap }
+      .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 16px; border-radius:10px; font-weight:600; border:1px solid var(--border); background:#0e141a; color:var(--text) }
+      .btn.primary { background:var(--accent); color:#062030; border-color:transparent }
+      .btn:hover { transform: translateY(-1px); filter: brightness(1.03) }
+      .card-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px }
+      .card { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; box-shadow:var(--shadow) }
+      .card h3 { margin:0 0 6px; font-size:18px }
+      .card p { margin:0; color:var(--muted) }
+      @media (max-width: 980px) { .hero .inner { grid-template-columns:1fr } .card-grid { grid-template-columns:1fr 1fr } }
+      @media (max-width: 620px) { .card-grid { grid-template-columns:1fr } }
+      section { padding:40px 0 }
+      section h2 { font-size:22px; margin:0 0 12px }
+      .list { display:grid; gap:12px }
+      .list li { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:12px }
+      footer { border-top:1px solid var(--border); padding:20px 0; color:var(--muted) }
+      .skip-link { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden }
+      .skip-link:focus { left:10px; top:10px; width:auto; height:auto; background:#000; color:#fff; padding:8px 10px; border-radius:8px; z-index:999 }
+      :focus-visible { outline:2px solid var(--accent); outline-offset:2px }
+      .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px }
+      .tag { background:#0e141a; border:1px solid var(--border); color:var(--muted); padding:4px 10px; border-radius:999px; font-size:12px }
+      .timeline { display:grid; gap:16px }
+      .t-item { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:14px }
+      .muted { color:var(--muted) }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <div class="container nav" role="navigation" aria-label="Main">
+        <a class="brand" href="#">
+          <span class="logo" aria-hidden="true"></span>
+          <span id="site-name">GoCadence</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <nav id="menu" class="nav-links">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#honors">Honors</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="container inner">
+          <div>
+            <h1>Hi, I'm <span style="color:var(--accent)">Vitaliy Gotsko</span>.</h1>
+            <p>IT Specialist and Computer Science student at NJIT based in Plainfield, NJ. I build useful, fast, and polished experiences. Below are selected projects, experience, honors, and activities.</p>
+            <div class="actions">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="mailto:gotskostudy@gmail.com">Contact Me</a>
+            </div>
+          </div>
+          <div class="panel" aria-label="Notes">
+            <pre style="margin:0; white-space:pre-wrap"><code>// Quick edit guide
+// 1) Update name/intro above
+// 2) Fill projects and experience
+// 3) Keep contact links current</code></pre>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="container">
+        <h2>About</h2>
+        <p>I’m an IT specialist and developer who enjoys solving practical problems with code and systems. Currently pursuing a B.S. in Computer Science at NJIT (Ying Wu College of Computing). Previously earned an A.S. in Computer Science from Union College of Union County, NJ (GPA 3.7/4.0).</p>
+        <p class="muted">Location: Plainfield, NJ · Phone: (973) 415-9291 · Email: <a href="mailto:gotskostudy@gmail.com">gotskostudy@gmail.com</a></p>
+      </section>
+      <section id="education" class="container">
+        <h2>Education</h2>
+        <div class="card-grid" role="list">
+          <div class="card" role="listitem">
+            <h3>NJIT — B.S. Computer Science</h3>
+            <p class="muted">Ying Wu College of Computing · Newark, NJ · Sep 2024 – Present</p>
+            <p><strong>Relevant Coursework:</strong> Intro to CS I & II, Programming Language Concepts, E‑Commerce Technology, Computation Theory, Intensive Programming in Linux, Database System Design & Management, Advanced Data Structures & Algorithms.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Union College of Union County, NJ — A.S. Computer Science</h3>
+            <p class="muted">Cranford, NJ · Sep 2022 – May 2024 · GPA: 3.7/4.0</p>
+            <p><strong>Relevant Coursework:</strong> Computer Program Fundamentals, Database Management Systems, Data Structures, Linux Fundamentals, Computer Algorithms, Intro to Operating Systems.</p>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <ul class="list">
+          <li><strong>Languages:</strong> C, C++, Java, Python, Bash, SQL</li>
+          <li><strong>Tools & Platforms:</strong> Replit, Unity, Obsidian, Git/GitHub, VS Code, Linux</li>
+          <li><strong>Other:</strong> Microsoft Excel, Technical Documentation</li>
+          <li><strong>Languages Spoken:</strong> English (fluent), Ukrainian (native), Russian (fluent), Spanish (beginner)</li>
+        </ul>
+      </section>
+      <section id="projects" class="container">
+        <h2>Projects & Research</h2>
+        <div class="card-grid" role="list">
+          <div class="card" role="listitem">
+            <h3>IRAP Research — Facial Detection & ML (UCNJ, Fall 2023)</h3>
+            <p>Applied OpenCV, CNNs, and Haar Cascades for real-time image recognition and authentication. Analyzed model accuracy, performance, and bias in facial detection systems.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">ML</span></div>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Hackathons & Entrepreneurship</h3>
+            <ul>
+              <li>NJIT Hackathon (2023–2025): Collaborated on competitive development projects; 2023 category winner for Best Domain Name.</li>
+              <li>KeanUHackThis (2025): Placed 2nd overall.</li>
+              <li>Business Center Entrepreneurship Workshop (UCNJ, 2023 & 2024): Developed business pitches; secured 3rd place.</li>
+            </ul>
+            <div class="tags"><span class="tag">Teamwork</span><span class="tag">Rapid Prototyping</span><span class="tag">Pitching</span></div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="t-item">
+            <header><strong>IT Specialist</strong> · <span class="muted">Little Catrell LLC — Truck & Trailer Repair + Parts Store</span></header>
+            <div class="muted">Newark, NJ · Nov 2023 – Present</div>
+            <ul>
+              <li>Diagnosed and resolved complex IT issues across hardware, software, and peripherals, reducing downtime by 34%.</li>
+              <li>Improved help desk efficiency by automating routine tasks with Bash scripts.</li>
+              <li>Leveraged Python for data analysis and C++ for system-level troubleshooting and optimization.</li>
+            </ul>
+          </article>
+          <article class="t-item">
+            <header><strong>Academic Learning Center Tutor</strong> · <span class="muted">Union College of Union County, NJ</span></header>
+            <div class="muted">Cranford, NJ · Oct 2023 – May 2024</div>
+            <ul>
+              <li>Provided individualized tutoring for diverse learning styles across CS fundamentals.</li>
+              <li>Integrated digital tools to enhance engagement in both in‑person and remote settings.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section id="leadership" class="container">
+        <h2>Leadership & Activities</h2>
+        <ul class="list">
+          <li><strong>Treasurer — Computer Science to Cybersecurity Club (UCNJ, 2022–2024):</strong> managed finances, budgeting, reporting, and fundraising; led project presentations to drive collaboration.</li>
+          <li><strong>Phi Theta Kappa Honor Society (UCNJ, Sep 2023 – Present):</strong> engaged in service projects and maintained high academic standing.</li>
+          <li><strong>Mathematics Immersion Program (Stevens Institute of Technology, Jul 2023):</strong> completed intensive coursework in higher mathematics and problem solving.</li>
+        </ul>
+      </section>
+      <section id="honors" class="container">
+        <h2>Honors & Awards</h2>
+        <ul class="list">
+          <li>Certificate of Achievement and Excellence — Stevens Institute of Technology (2023).</li>
+          <li>NJIT 24‑Hour Hackathon (2023): Best Domain Name Award.</li>
+          <li>President’s High Honors List, UCNJ (2022–2023).</li>
+          <li>KeanUHackThis (2025): 2nd Place Overall.</li>
+        </ul>
+      </section>
+      <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Best way to reach me:</p>
+        <p><a class="btn" href="mailto:gotskostudy@gmail.com">Email Me</a> <a class="btn" href="https://github.com/elgniston" target="_blank" rel="noopener">GitHub</a> <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p class="muted">Based in Plainfield, NJ · Phone: (973) 415-9291 · Prefer a resume? See the Resume button in the header.</p>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <span>&copy; <span id="year"></span> <span id="footer-name">GoCadence</span>. All rights reserved.</span>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.getElementById('menu');
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          const isOpen = menu.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+          if (menu.classList.contains('open')) { menu.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+        }));
+      }
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const siteName = document.getElementById('site-name').textContent;
+      document.getElementById('footer-name').textContent = siteName;
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vitaliy Gotsko",
+        "url": "https://gocadence.tech/",
+        "email": "mailto:gotskostudy@gmail.com",
+        "homeLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Plainfield", "addressRegion": "NJ", "addressCountry": "US" } }
+      }
+    </script>
+  </body>
+  </html>
+
