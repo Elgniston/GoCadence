@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap for faster discovery
+Sitemap: https://gocadence.tech/sitemap.xml
+
